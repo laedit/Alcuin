@@ -2,63 +2,75 @@
 
 ## Spécification fonctionnelle
 **Jérémie Bertrand**  
-Dernière mise à jour : 02 octobre 2015
+Dernière mise à jour : 10 octobre 2015
 ___
 ### Vue d'ensemble
-Alcuin est un logiciel permettant à un Conseiller Principal d'Education de former ses classes.
+Alcuin est un logiciel permettant à un Conseiller Principal d'Education de former ses classes en regroupant les élèves par option.
 
-[Lien vers wikipedia Alcuin]
+Le nom [Alcuin](https://fr.wikipedia.org/wiki/Alcuin) a été choisi pour la relation du personnage avec Charlemagne et l'univers de l'enseignement.
 
-**Cette spécification n'est en aucun cas complète.** 
+**Cette spécification n'est en aucun cas complète.**  
 Toute la formulation devra être révisée à plusieurs reprises avant d'être finalisée. Les graphiques et écrans montrés ici illustrent simplement les fonctionnalités. Le look et l'utilisation finaux seront développés au fil du temps avec les retours des utilisateurs.
 
 
 ### Scénarios
 
 **Scénario 1 : Benoît**   
-Galère avec excel puis un ami lui conseille ce logiciel qui lui simplifie la vie.
+Benoît est CPE. Dans un lycée public. Et comme l'éducation national n'a pas de budget, il galère chaquer année avec excel lors de la répartition des élèves dans les classes. Mais heureusement pour lui un ami lui parle du logiciel Alcuin qui fait ça simplement. Après avoir convaincu le directeur que le lycée allait gagner en productivité, Benoît peut utiliser Alcuin. Et Benoît est enfin heureux.
 
 **Scénario 2 : Norah**  
-Avait promis à son élève préféré qu'il serait avec des amis. Le change de classe via le logiciel.
+Norah est CPE. Dans un lycée privé. C'est sa seconde année et l'année précédente, pour se faire accepter, elle s'est rapprochée de certains élèves. Et elle a promis à son élève préféré qu'il serait avec ses amis. Dans un lycée aussi grand, cela peut être compliqué. Mais elle utilise Alcuin, qui permet facilement de le changer de classe et de faire en sorte qu'il soit avec ses amis.
 
 
 ### Ce qu'il n'est pas
-*A remplir au fur et à mesure des retours.*
+Cette version ne supportera pas les formats inconnus de fichiers lors de l'import des élèves.  
+Cela pourra faire l'objet d'une version ultérieure.
 
 ### Présentation globale
 
-Import des données  
-    |  
-   \/  
-Revue des élèves  
-    |  
-   \/  
-Définition des critères  
-    |  
-   \/  
-Résultat / modification  
+Schéma d'enchaînement des écrans :
 
-Paramètres / A propos   
+Import des données -> Revue des élèves -> Définition des critères -> Regroupement
+
+A propos   
+
+Maquette cliquable : https://app.moqups.com/laedit/zNkxFDqQxs/view
 
 ### Ecran par écran 
 
 #### Import des données
+![Alcuin - import des données](1.Alcuin - Import.png) 
+
+Permet d'importer un fichier excel produit par le logiciel SIECLE via :
+ - un glisser / déposer du fichier dans la fenêtre
+ - un clic sur le texte ouvrira une fenêtre de sélection de fichier 
 
 #### Revue des élèves
+![Alcuin - vérification](2.Alcuin - Vérification.png)
+
+Permet de vérifier les données des élèves importer et de les modifier si nécessaire.  
+Le clic sur le bouton "suite" permet d'accéder au prochain écran.
 
 #### Définition des critères
+![Alcuin - critères](3.Alcuin - Critères.png)
 
-#### Résultat / modifications
+Permet de définir les différents critères  utilisées pour le regroupement des élèves en classes.  
+Le clic sur le bouton "regrouper" lance le regroupement et passe au prochain écran.
 
-#### Paramètres / A propos
-Contient les paramètres globaux :
- - nombre d'élèves max par classe
- - liste des filières ?
+#### Regroupement
+![Alcuin - regroupement](4.Alcuin - Regroupement.png)
 
-Contient également la partie A propos :
- - Mention du créateur
- - Lien vers le code-source / la dernière version
- - Mention des librairies / images utilisées
+Permet de vérifier que le regroupement correspond à ce qui était attendu et à changer les élèves de classe si besoin.  
+Le clic sur le bouton "exporter" permet d'exporter les données (élèves + classes) dans un fichier excel au format compréhensible par SIECLE.
+
+#### A propos
+![Alcuin - a propos](5.Alcuin - A propos.png)
+
+Affiche des informations sur :
+ - le logiciel (nom, description, version)
+ - le créateur
+ - lien vers le code-source / la dernière version
+ - mention des librairies / images utilisées
 
 
 ### Questions ouvertes
@@ -67,6 +79,6 @@ Contient également la partie A propos :
   - [Classroom](https://thenounproject.com/term/classroom/194402/)
   - [Teacher](https://thenounproject.com/term/teacher/21550/)
   - [Genius](https://thenounproject.com/term/genius/78791/)
- - Format des fichiers d'entrées
- - Poid des critères lors du tri
- - Aide à l'utilisation ?
+ - Format des fichiers d'entrées (xls, xlsx, plusieurs tableaux, combien d'élèves) ?
+ - Poid des critères lors du tri : est-ce que les options sont plus importantes ?
+ - Nombre de classes par filière : à définir via les options du logiciel ? Ou chiffre connu ?
