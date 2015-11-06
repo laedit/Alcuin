@@ -2,7 +2,7 @@
 
 ## Spécification fonctionnelle
 **Jérémie Bertrand**  
-Dernière mise à jour : 10 octobre 2015
+Dernière mise à jour : 06 novembre 2015
 ___
 ### Vue d'ensemble
 Alcuin est un logiciel permettant à un Conseiller Principal d'Education de former ses classes en regroupant les élèves par option.
@@ -48,7 +48,7 @@ Permet d'importer un fichier excel produit par le logiciel SIECLE via :
 #### Revue des élèves
 ![Alcuin - vérification](2.Alcuin - Vérification.png)
 
-Permet de vérifier les données des élèves importer et de les modifier si nécessaire.  
+Permet de vérifier les données des élèves importés et de les modifier si nécessaire.  
 Le clic sur le bouton "suite" permet d'accéder au prochain écran.
 
 #### Définition des critères
