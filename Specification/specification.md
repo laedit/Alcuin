@@ -2,7 +2,7 @@
 
 ## Spécification fonctionnelle
 **Jérémie Bertrand**  
-Dernière mise à jour : 06 novembre 2015
+Dernière mise à jour : 11 novembre 2015
 ___
 ### Vue d'ensemble
 Alcuin est un logiciel permettant à un Conseiller Principal d'Education de former ses classes en regroupant les élèves par option.
@@ -79,6 +79,7 @@ Affiche des informations sur :
   - [Classroom](https://thenounproject.com/term/classroom/194402/)
   - [Teacher](https://thenounproject.com/term/teacher/21550/)
   - [Genius](https://thenounproject.com/term/genius/78791/)
- - Format des fichiers d'entrées (xls, xlsx, plusieurs tableaux, combien d'élèves) ?
+  - [Creativity](https://thenounproject.com/term/creativity/194992/) (proposé par Laurent)
+ - Format des fichiers d'entrées (xls, xlsx, plusieurs tableaux, combien d'élèves) ? => Un fichier par filière dans un cas. Attente de fichiers exemples pour l'autre.
  - Poid des critères lors du tri : est-ce que les options sont plus importantes ?
- - Nombre de classes par filière : à définir via les options du logiciel ? Ou chiffre connu ?
+ - Nombre de classes par filière : à définir via les options du logiciel ? Ou chiffre connu ? => A définir dans le logiciel.
